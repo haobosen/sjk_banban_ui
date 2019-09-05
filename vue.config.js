@@ -1,0 +1,25 @@
+
+module.exports = {
+    // 将 examples 目录添加为新的页面
+    pages: {
+      index: {
+        // page 的入口
+        entry: 'example/main.js',
+        // 模板来源
+        template: 'public/index.html',
+        // 输出文件名
+        filename: 'index.html'
+      }
+    },
+    css: {
+      loaderOptions: {
+        sass: {
+          data: `
+            @import "./assets/styles/common/_variable.scss";
+            @import "./assets/styles/common/icon.scss";
+            @import "./assets/styles/common/common.scss";
+          `
+        }
+      }
+    }
+  }

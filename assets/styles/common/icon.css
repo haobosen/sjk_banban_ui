@@ -1,0 +1,8 @@
+.iconicon:before {
+  width: 15px;
+  height: 15px;
+  content: '';
+  display: block;
+  background: url(//img.sanjieke.cn/common/headgift.png) no-repeat center;
+  background-size: 100% auto;
+}

@@ -1,0 +1,15 @@
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import App from './App.vue'
+// import testPlugin from './plugin/test.js'
+import sjkBbUI from '../package/index'
+
+Vue.config.productionTip = false
+
+Vue.use(ElementUI)
+Vue.use(sjkBbUI)
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app')
